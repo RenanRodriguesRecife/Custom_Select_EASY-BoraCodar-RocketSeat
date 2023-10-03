@@ -57,3 +57,37 @@
 #chevrons [data-lucide="chevron-up"]{
     display: none;
 }
+
+#options-view-button:focus + #select-button,
+#options-view-button:checked + #selected-button{
+    outline: 1px solid #A881E6;
+}
+
+#category-select:has(#options-view-button:checked) label,
+#options-view-button:checked + #select-button #chevrons{
+    color: #A881E6;
+}
+
+#options-view-button:checked + #select-button #chevrons[data-lucide="chevron-down"]{
+    display: none;
+}
+
+#options-view-button:checked + #select-button #chevrons[data-lucide="chevron-up"]{
+    display: block;
+}
+
+#category-select{
+    position: relative;
+}
+
+#options-view-button{
+    all: unset;
+
+    position: absolute;
+    inset: 0;
+
+    cursor: pointer;
+    z-index: 3;
+
+    border: 1px solid red;
+}
