@@ -91,3 +91,23 @@
 
     border: 1px solid red;
 }
+
+#options {
+    margin-top: .25rem;
+
+    border-radius: .375rem;
+    border: 1px solid #252529;
+    background: #17171A;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    padding: .75rem;
+    width: 100%;
+    border-bottom: 1px solid #252529
+}
+
+10:26
